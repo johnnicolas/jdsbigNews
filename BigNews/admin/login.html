@@ -98,7 +98,9 @@
             $('#myModal').on('hidden.bs.modal', function (e) {
               // do something...
               //跳转首页
-              window.location.href = './index.html'
+
+              window.location.href = './index.html';
+              localStorage.setItem('token', backData.token)
             })
 
           } else {
